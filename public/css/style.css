@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color:rgba(255, 255, 255, 0.815);
+}
+
+/*chatbot button*/
+a.btn {
+  background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(34,62,66,.25);
+  size: 10%;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height:5px;
+  padding: 16px 16px;
+  margin-top: 30px;
+  margin-left: 70%;
+  margin-bottom: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+}
+  
+a.btn:hover {
+  box-shadow: 0px 6px 12px rgba(34,62,66,.5);
+  border-radius: 25px;
+  -webkit-transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+  color:black;
+}
+
+/*內容*/
+.weather{
+  margin-top: -10%;
+}
+
+h3.category{
+  font-size: 20px;
+  font-weight:bold;
+  margin-left: 30px;
+  border-bottom: 3px solid  black;
+  width: 100%;
+  max-width:5rem;
+  padding-bottom: 3px;
+}
+
+h3.text-up{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+h3.text-up{
+  margin-left: 30px;
+}
+
+p.text-left{
+  margin-left: 30px;
+  font-size:15px;
+}
+
+/*Weather*/
+div.card{
+  width:100%;
+  margin-left: 8%;
+  margin-top:31%;
+  margin-bottom:10%;
+  border-radius:15px;
+  float:left;
+  border-color:rgba(255, 255, 255, 0.815);
+}
+div.card-block{
+  display: fixed;
+  width:30%; 
+  border-radius:15px;
+  background-color:skyblue;
+  border-color:skyblue;
+  float:left;
+}
+
+h5.card-title{
+  text-align: center;
+  color: white;
+}
+
+p.card-text{
+  text-align:center;
+  color: white;
+}
+i.fas{
+  text-align: center;
+  margin-left:18%;
+}
+
+span.weather-display{
+  font-size: 3em; 
+  color:white;
+}
+
+/*Recipe Block*/
+section.hero-section{
+  /*background: #2d3548;*/
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: -30%;
+}
+
+/*
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+body{
+  height: 100%;
+}
+*/
+.hero-section{
+  align-items: flex-start;
+  /*background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);*/
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  /*padding: 64px 24px;*/
+  padding: 30px 24px;
+}
+
+div.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  /*max-width: 1200px;
+  width: 100%;*/
+  max-width: 800px;
+  width:100%;
+}
+
+@media(min-width: 540px){
+  div.card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  div.card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+a.card{
+  list-style: none;
+  position: relative;
+  border-color:rgba(255, 255, 255, 0.815);
+  background-color:rgba(255, 255, 255, 0.815);
+}
+
+a.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+div.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+a.card:hover div.card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+div.card-grid:hover > a.card:not(:hover) div.card__background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+div.card__content{
+  left: 0;
+  padding: 20px;
+  margin-right:30px;
+  position: absolute;
+  top: 0;
+}
+
+p.card__category{
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+h3.card__heading{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+  text-align:left;
+}
