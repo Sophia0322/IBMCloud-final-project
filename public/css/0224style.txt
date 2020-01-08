@@ -71,15 +71,13 @@ p.text-left{
 /*Weather*/
 div.card{
   width:100%;
-  /*margin-left: 8%;*/
-  margin-left: 15%;
+  margin-left: 8%;
   margin-top:31%;
   margin-bottom:10%;
   border-radius:15px;
   float:left;
   border-color:rgba(255, 255, 255, 0.815);
 }
-
 div.card-block{
   display: fixed;
   width:30%; 
@@ -90,13 +88,9 @@ div.card-block{
 }
 
 h5.card-title{
-  width:60px;
-  /*background-color: blue;*/
   text-align: center;
   color: white;
-  font-size: 1rem;
-  padding-left: -10px;
-  margin:auto;
+  font-size: 1.1rem;
 }
 
 p.card-text{
@@ -104,10 +98,8 @@ p.card-text{
   color: white;
 }
 i.fas{
-  align-items:normal;
-  margin-left: 22%;
-  width: 100%;
-  max-width:5rem;
+  text-align: center;
+  margin-left:19%;
 }
 
 span.weather-display{
@@ -118,10 +110,10 @@ span.weather-display{
 
 /*weathernewtryyyyyyy*/
 section.card-weather{
+  
+  margin-left: 8%;
+  /*margin: 30%;*/
   margin-top: 30%;
-  margin-bottom: 20%;
-  margin-left: 30%;
-
   width: 200%;
   max-width: auto;
   align-items: flex-start;
@@ -130,36 +122,21 @@ section.card-weather{
   /*min-height: 100%;*/
   justify-content: center;
   /*padding: 64px 24px;*/
- 
-  box-sizing: border-box;
-  border:0;
+  margin-bottom: 20%;
+
 }
 
 div.card-block{
   display: fixed;
   /*width:40%; */
-  /*margin:10px;
-  width: 100px;*/
-  width: 100%;
+  /*margin:10px;*/
+  width: 100px;
   margin-right: 5px;
   border-radius:15px;
   background-color:skyblue;
   border-color:skyblue;
   float:left;
 }
-
-@media(min-width: 540px){
-  div.card-block{
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media(min-width: 960px){
-  div.card-block{
-    grid-template-columns: repeat(4, 1fr); 
-  }
-}
-
 
 /*Recipe Block*/
 section.hero-section{
@@ -168,7 +145,7 @@ section.hero-section{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-left: -10%;
+  margin-left: -30%;
   margin-bottom: -16%;
 
 }
@@ -222,8 +199,8 @@ div.card-grid{
   grid-row-gap: 24px;
   /*max-width: 1200px;
   width: 100%;*/
-  max-width: 1000px;
-  width:90%;
+  max-width: 800px;
+  width:100%;
 }
 
 @media(min-width: 540px){
@@ -234,10 +211,9 @@ div.card-grid{
 
 @media(min-width: 960px){
   div.card-grid{
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
   }
 }
-
 
 a.card{
   list-style: none;
