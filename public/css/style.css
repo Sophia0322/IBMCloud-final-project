@@ -1,9 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+@-ms-viewport{
+  width: device-width;
+}
+
 body{
   font-family: 'Noto Sans TC', sans-serif;
-  background-color:rgba(255, 255, 255, 0.815);
+  /*background-color:rgba(255, 255, 255, 0.815);*/
+  background-color:white;
 }
 
 /*chatbot button*/
@@ -85,6 +90,7 @@ div.card-block{
 h5.card-title{
   text-align: center;
   color: white;
+  font-size: 1.1rem;
 }
 
 p.card-text{
@@ -93,12 +99,43 @@ p.card-text{
 }
 i.fas{
   text-align: center;
-  margin-left:18%;
+  margin-left:19%;
 }
 
 span.weather-display{
   font-size: 3em; 
   color:white;
+  text-align:center;
+}
+
+/*weathernewtryyyyyyy*/
+section.card-weather{
+  
+  margin-left: 8%;
+  /*margin: 30%;*/
+  margin-top: 30%;
+  width: 200%;
+  max-width: auto;
+  align-items: flex-start;
+  /*background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);*/
+  display: flex;
+  /*min-height: 100%;*/
+  justify-content: center;
+  /*padding: 64px 24px;*/
+  margin-bottom: 20%;
+
+}
+
+div.card-block{
+  display: fixed;
+  /*width:40%; */
+  /*margin:10px;*/
+  width: 100px;
+  margin-right: 5px;
+  border-radius:15px;
+  background-color:skyblue;
+  border-color:skyblue;
+  float:left;
 }
 
 /*Recipe Block*/
@@ -109,19 +146,42 @@ section.hero-section{
   padding: 0;
   box-sizing: border-box;
   margin-left: -30%;
+  margin-bottom: -16%;
+
 }
 
-/*
-html{
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-}
 
-body{
-  height: 100%;
+/*weather new-try*/
+/*.card-weather{
+  background-color:blue;
 }
 */
+
+p.card__category{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.5rem;
+  /*margin-bottom: 8px;*/
+  margin-left:3px;
+  /*text-transform: uppercase;*/
+  word-spacing: 100vw;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-align:center;
+}
+
+p.card__temperature{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.5rem;
+  /*margin-bottom: 8px;*/
+  margin-left:3px;
+  /*text-transform: uppercase;*/
+  word-spacing: 100vw;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-align:center;
+}
+
+/*recipe template*/
 .hero-section{
   align-items: flex-start;
   /*background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);*/
@@ -165,7 +225,7 @@ a.card{
 a.card:before{
   content: '';
   display: block;
-  padding-bottom: 150%;
+  padding-bottom: 150%; /*區塊大小*/
   width: 100%;
 }
 
@@ -201,13 +261,14 @@ div.card__content{
   position: absolute;
   top: 0;
 }
-
+/*
 p.card__category{
   color: rgba(255,255,255,0.6);
   font-size: 0.9rem;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
+*/
 
 h3.card__heading{
   color: rgba(255,255,255,0.9);
